@@ -3,28 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fil Rouge</title>
-    <meta name="description" content="#">
+    <title>Fil Rouge | Home</title>
+    <meta name="description" content="Les 6 travaux de Thermototo">
     <meta name="author" content="Thermototo">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_fixed.css">
+    <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/3c56072dd7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>L'algo de Toto</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#works">Qui suis-je ?</a>
-            <a href="#pricing">Hobbies</a>
-            <a href="#contact">Cours</a>
-            <a href="#contact">Contact</a>
+        <h1>
+            <a href="index.html">Les 6 travaux de Thermototo</a>
+        </h1>
+        <nav class="menu">
+            <div class="categorie">
+                <a href="pages/jcvd/JCVD.html" target=_blank>JCVD</a>
+            </div>
+            <div class="categorie">
+                <a href="pages/positionnement/index.html" target=_blank>Positionnement</a>
+                <ul class="liste">
+                    <li><a href="pages/positionnement/index.html" target=_blank>relatif et absolu</a></li>
+                    <li><a href="pages/positionnement/pages/4_carres.html" target=_blank>relatif vs absolu</a></li>
+                    <li><a href="pages/positionnement/pages/float.html" target=_blank>float</a></li>
+                    <li><a href="pages/positionnement/pages/sticky.html" target=_blank>sticky</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="#amuse">Flex</a>
+            </div>
+            <div class="categorie">
+                <a href="#etudie">Mondrian</a>
+                <ul class="liste">
+                    <li><a href="#cours">template-area</a></li>
+                    <li><a href="#exos">template cols/rows</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="#etudie">Animations</a>
+                <ul class="liste">
+                    <li><a href="#cours">carré</a></li>
+                    <li><a href="#cours">rebond</a></li>
+                    <li><a href="#cours">loader</a></li>
+                    <li><a href="#cours">course</a></li>
+                    <li><a href="#exos">caroussel</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="#etudie">Responsive</a>
+                <ul class="liste">
+                    <li><a href="#cours">lorem</a></li>
+                    <li><a href="#cours">météo</a></li>
+                    <li><a href="#cours">bootstrap</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="#contact">Contact</a>
+            </div>
             <form> 
                 <input type="text" name=text" class="search" placeholder="Search ..">
                 <button type="submit">
                     <i class="fas fa-search"></i>
                 </button>
-              </form>
+            </form>
         </nav>
     </header>
+    <div id="clip">
+        <div id="container">
+            <img src="img/caius.png" alt="caius pupus">
+            <p>
+                Voici le portfolio des exercices réalisés pendant le module html / css dans le cadre de la formation développeur web de l'IFA de Metz.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright @ 2021 Binding, Inc. All rights reserved.<br />
+            Theme: TP Fil Rouge 1.0.0. Designed by Thermototo.
+        </div>
+    </footer>
 </body>
 </html>

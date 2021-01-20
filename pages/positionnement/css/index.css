@@ -1,0 +1,132 @@
+@font-face{
+    font-family: "titre";
+    src: url(../font/Bangers-Regular.ttf);
+}
+
+@font-face{
+    font-family: "h2";
+    src: url(../font/Dosis-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+header {
+    position: fixed; 
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,148,189,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;  
+    text-align: center;
+    padding: 10px;
+    border: solid black 2px; 
+    z-index: 1;  /* z-index à 1 pour que le header soit toujours visible même lorsque l'on scroll*/
+}
+
+footer{
+    text-align: right;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header a{
+    color: white;
+    padding: 25px; /* Le padding sert à espacer les exos les uns des autres */
+}
+
+footer a{
+    font-size: 0.6rem;
+    padding-bottom: 15px;
+}
+
+h1{
+    font-family: "titre", Verdana, sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 15px; /* J'ai mis un margin-bottom pour éviter que le titre soit collé aux liens vers les exercices  */
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+    /* Les padding top et left servent a laisser de l'espace entre le titre h2 et le <hr> pour le top et la marge gauche de l'écran pour le left */
+    font-family: "h2", Verdana, sans-serif;
+}
+
+#exo1{
+    padding-top: 105px; /* J'ai du mettre un grand padding top sinon le header cachait le "NoPosition" */
+}
+
+.nop{
+    border: 1px solid black;
+    padding: 50px;
+}
+.first{
+    width: 40%;
+    margin: 50px auto;
+    background-color: green;
+    position: relative;
+}
+
+.second{
+    background-color: blue;
+}
+
+.third{
+    background-color: orangered;
+}
+
+#second2{
+    position: relative;
+    left: 25%;
+    background-color: rgba(85,95,152,0.8);
+}
+
+#third2{
+    position: relative;
+    right: 75%;
+}
+
+#exo3{
+    /* J'ai donné une taille à la section pour éviter que le carré #third3 dépasse sur la section suivante */
+    height: 500px;
+}
+
+#third3{
+    position: absolute;
+    top: 250px;
+    right: 50%;
+}
+#exo4{
+    /* Encore une fois je donne une hauteur pour que la div #fourth4 ne soit pas tout en bas de la page mais qu'il y ait un peu d'espace avant la fin de la page */
+    height: 600px;
+}
+#second4{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#third4{
+    /* Je mets #third4 en relative car dans l'énnoncé #fourth4 devait être en absolue par rapport à la div parent  */
+    position: relative;
+}
+
+#fourth4{
+    position: absolute;
+    background-color: royalblue;
+    top: 200px;
+    left: 200px;
+}

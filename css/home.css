@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#clip{
+    display: flex;
+    background-color: #58ADD8FF;
+    clip-path: polygon(0 1%, 50% 0, 100% 50%, 100% 100%, 40% 100%, 0 40%);
+    height: 94vh;
+}
+
+#container{
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    clip-path: polygon(0 1%, 50% 0, 100% 35%, 100% 100%, 40% 100%, 0 65%);
+    margin: auto;
+}
+
+p{
+    width: 60%;
+    margin-left: 40%;
+    text-align: justify;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+p::first-letter{
+    font-size: 1.5rem;
+    padding-left: 35px;
+}
+
+img{
+    padding: 25px;
+}
