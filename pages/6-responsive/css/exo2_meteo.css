@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------Mise en page générale-------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+#sommaire{
+    float: left;
+    clear: both;
+    margin: 15px 0px;
+}
+
+footer{
+    float: left;
+    clear: both;
+    text-align: center;
+    font-size: 0.6em;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------Mise en page du conteneur météo en dessous de 1100px------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+#contain{
+    padding: 20px 10px;
+}
+
+#date{
+    margin-bottom: 10px;
+}
+
+
+/*----------------------------------Mise en page overlay-------------------------------------------------*/
+
+#image{
+    float: left;
+    height: 96px;
+    width: 96px;
+}
+
+#temperature{ 
+    padding-left: 50px;
+}
+
+#temperature div:nth-child(1){
+    font-size: 4em;
+    float: left;
+    padding-left: 10px;
+}
+
+#temperature div:nth-child(2){
+    margin-top: 5px;
+    float: left;
+}
+
+#infos{
+    float: right;
+    line-height: 22px;
+    width: 45%;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------Mise en page jours de la semaine--------------------------------------*/
+
+#calendrier{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.jours{
+    border-top: 2px solid black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.jour,
+.img,
+.temp,
+.vent{
+    width: 25%;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------responsive au dessus de 1100px----------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width:1100px){
+    #contain{
+        height: 89.4%;
+    }
+
+    #infos{
+        font-size: 1.7em;
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #calendrier{
+        display: flex;
+    }
+    
+    .jours{
+        flex-direction: column;
+        width: 15%;
+        height: 300px;
+        border-top: none;
+        align-items:center;
+        justify-content: space-around;
+        border: 1px solid white;
+        background-color: lightblue;
+        border-radius: 25px;
+    }
+    
+    .jour{
+        font-size: 2em;
+        width:100%;
+        text-align: center;
+    }
+
+    .max{
+        float: left;
+        margin-right: 10px;
+    }
+
+    .ventTitre{
+        display: none;
+    }
+
+    .temp,
+    .vent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .temp{
+        margin-bottom: -40px;
+    }
+}
+
+
+

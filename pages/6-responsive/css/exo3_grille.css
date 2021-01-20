@@ -1,0 +1,334 @@
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------Mise en page générale-------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+#sommaire{
+    margin: 15px 0px; 
+}
+
+#copyright{
+    float: left;
+    clear: both;
+    text-align: center;
+    font-size: 0.6em;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------Mise en page de #container--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.fas{
+    text-align: right;
+    position: relative;
+    right: 15px;
+}
+
+#nav a{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #8EA867FF;
+}
+
+#nav{
+    text-align: center;
+    margin: 50px auto;
+    display: none;
+}
+
+h2,
+h3,
+h4,
+h5{
+    padding: 15px;
+    font-size: 2em;
+}
+
+h4,
+h5{
+    font-size: 1.3em;
+}
+
+h4,
+span{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+p{
+    text-align: justify;
+    padding: 5px 10px;
+}
+
+#whois p::first-letter{
+    font-size: 1.3em;
+    padding-left: 20px;
+}
+
+#equipage,
+#trophy,
+#sponsor{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px calc(100%/12);  /* je donne une marge de 1 colonne de chaque cotés*/
+    background-color: #8EA867FF;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*----------------------------------config de la grille pour le plus petit screen-------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.container{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.row> div{
+    float: left;
+}
+
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.col-xs-1{
+    width: calc(100%/12);
+}
+.col-xs-2{
+    width: calc(200%/12);
+}
+.col-xs-3{
+    width: calc(300%/12);
+}
+.col-xs-4{
+    width: calc(400%/12);
+}
+.col-xs-5{
+    width: calc(500%/12);
+}
+.col-xs-6{
+    width: calc(600%/12);
+}
+.col-xs-7{
+    width: calc(700%/12);
+}
+.col-xs-8{
+    width: calc(800%/12);
+}
+.col-xs-9{
+    width: calc(900%/12);
+}
+.col-xs-10{
+    width: calc(1000%/12);
+}
+.col-xs-11{
+    width: calc(1100%/12);
+}
+.col-xs-12{
+    width: calc(1200%/12);
+}
+ 
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------- grille et modif pour écran > 700px ----------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:700px){
+    .col-sm-1{
+        width: calc(100%/12);
+    }
+    .col-sm-2{
+        width: calc(200%/12);
+    }
+    .col-sm-3{
+        width: calc(300%/12);
+    }
+    .col-sm-4{
+        width: calc(400%/12);
+    }
+    .col-sm-5{
+        width: calc(500%/12);
+    }
+    .col-sm-6{
+        width: calc(600%/12);
+    }
+    .col-sm-7{
+        width: calc(700%/12);
+    }
+    .col-sm-8{
+        width: calc(800%/12);
+    }
+    .col-sm-9{
+        width: calc(900%/12);
+    }
+    .col-sm-10{
+        width: calc(1000%/12);
+    }
+    .col-sm-11{
+        width: calc(1100%/12);
+    }
+    .col-sm-12{
+        width: calc(1200%/12);
+    } 
+    /*--------------------------------------------------------------------------------------------------------*/  
+    .fas{
+        display: none;
+    }
+
+    #nav{
+        display: block;
+    }
+    
+    #sommaire{
+        position: relative;
+        left: 50px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------- grille et modif pour écran > 900px ----------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:900px){
+    .col-md-1{
+        width: calc(100%/12);
+    }
+    .col-md-2{
+        width: calc(200%/12);
+    }
+    .col-md-3{
+        width: calc(300%/12);
+    }
+    .col-md-4{
+        width: calc(400%/12);
+    }
+    .col-md-5{
+        width: calc(500%/12);
+    }
+    .col-md-6{
+        width: calc(600%/12);
+    }
+    .col-md-7{
+        width: calc(700%/12);
+    }
+    .col-md-8{
+        width: calc(800%/12);
+    }
+    .col-md-9{
+        width: calc(900%/12);
+    }
+    .col-md-10{
+        width: calc(1000%/12);
+    }
+    .col-md-11{
+        width: calc(1100%/12);
+    }
+    .col-md-12{
+        width: calc(1200%/12);
+    } 
+    /*--------------------------------------------------------------------------------------------------------*/     
+    #en-tete{
+        display: none;
+    }
+
+    #sponsor{
+        margin: 15px calc(400%/12);
+    }
+
+    #nav a{
+        border: 2px solid black;
+        font-size: 1.5em;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------- grille et modif pour écran > 1200px ---------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1200px){
+    .col-lg-1{
+        width: calc(100%/12);
+    }
+    .col-lg-2{
+        width: calc(200%/12);
+    }
+    .col-lg-3{
+        width: calc(300%/12);
+    }
+    .col-lg-4{
+        width: calc(400%/12);
+    }
+    .col-lg-5{
+        width: calc(500%/12);
+    }
+    .col-lg-6{
+        width: calc(600%/12);
+    }
+    .col-lg-7{
+        width: calc(700%/12);
+    }
+    .col-lg-8{
+        width: calc(800%/12);
+    }
+    .col-lg-9{
+        width: calc(900%/12);
+    }
+    .col-lg-10{
+        width: calc(1000%/12);
+    }
+    .col-lg-11{
+        width: calc(1100%/12);
+    }
+    .col-lg-12{
+        width: calc(1200%/12);
+    }
+    /*--------------------------------------------------------------------------------------------------------*/
+    #banniere{
+        margin: 0px calc(200%/12);
+    }
+
+    p{
+        padding: 5px 20px;
+    }
+    
+    #whois p::first-letter{
+        padding-left: 00px;
+    }
+
+    #equipage,
+    #trophy,
+    #sponsor{
+        margin: 15px calc(50%/12); 
+    }
+}

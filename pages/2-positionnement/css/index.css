@@ -1,0 +1,87 @@
+@font-face{
+    font-family: "h2";
+    src: url(../font/Dosis-VariableFont_wght.ttf);
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+    /* Les padding top et left servent a laisser de l'espace entre le titre h2 et le <hr> pour le top et la marge gauche de l'écran pour le left */
+    font-family: "h2", Verdana, sans-serif;
+}
+
+footer{
+    text-align: right;  
+}
+
+footer a{
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: black;
+}
+
+#exo1{
+    padding-top: 105px; /* J'ai du mettre un grand padding top sinon le header cachait le "NoPosition" */
+}
+
+.nop{
+    border: 1px solid black;
+    padding: 50px;
+}
+.first{
+    width: 40%;
+    margin: 50px auto;
+    background-color: green;
+    position: relative;
+}
+
+.second{
+    background-color: blue;
+}
+
+.third{
+    background-color: orangered;
+}
+
+#second2{
+    position: relative;
+    left: 25%;
+    background-color: rgba(85,95,152,0.8);
+}
+
+#third2{
+    position: relative;
+    right: 75%;
+}
+
+#exo3{
+    /* J'ai donné une taille à la section pour éviter que le carré #third3 dépasse sur la section suivante */
+    height: 500px;
+}
+
+#third3{
+    position: absolute;
+    top: 250px;
+    right: 50%;
+}
+#exo4{
+    /* Encore une fois je donne une hauteur pour que la div #fourth4 ne soit pas tout en bas de la page mais qu'il y ait un peu d'espace avant la fin de la page */
+    height: 600px;
+}
+#second4{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#third4{
+    /* Je mets #third4 en relative car dans l'énnoncé #fourth4 devait être en absolue par rapport à la div parent  */
+    position: relative;
+}
+
+#fourth4{
+    position: absolute;
+    background-color: royalblue;
+    top: 200px;
+    left: 200px;
+}

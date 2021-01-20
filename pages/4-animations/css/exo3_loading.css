@@ -1,0 +1,71 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------communs a tous les exos---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+section{
+    height: 728px;
+    border:white 1px solid;
+}
+
+section a{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+#contain{
+    position: relative;
+    border: solid 2px green;
+    width: 25vw;
+    height: 25vw;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 120px auto 50px auto;
+    background-color: #F5F5DCF7;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.loader{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    border: black 1px solid;
+    border-radius: 100%;
+    display: inline-block;
+    left: 17%;
+    top: 40%;
+    background-color: white;
+
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#loader2{
+    animation-delay: 1s;
+}
+
+#loader3{
+    animation-delay: 2s;
+}
+
+@keyframes loader{
+    0%{
+        background-color: white;
+    }
+    10%{
+        background-color: white;
+    }
+    90%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+}

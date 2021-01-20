@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------communs a tous les exos---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+section{
+    height: 728px;
+    border:white 1px solid;
+}
+
+section a{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+#contain{
+    position: relative;
+    border: solid 2px green;
+    width: 25vw;
+    height: 25vw;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 120px auto 50px auto;
+    background-color: #F5F5DCF7;
+    overflow: hidden;  /*unique a cet exo*/
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.carre{
+    width: 15%;
+    height: 15%;
+    border: 1px solid black;
+    position: absolute;
+    background-image: url(../img/course_hypnose.png);
+    background-size: cover;
+
+    animation-name: courseRotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.carre:nth-child(1){
+    background-color: lightblue;
+}
+.carre:nth-child(2){
+    background-color: lightgreen;
+    animation-delay: 1s;
+}
+.carre:nth-child(3){
+    background-color: lightslategray;
+    animation-delay: 2s;
+}
+.carre:nth-child(4){
+    background-color: lightpink;
+    animation-delay: 3s;
+}
+.carre:nth-child(5){
+    background-color: lightyellow;
+    animation-delay: 4s;
+}
+
+@keyframes courseRotate{
+    0%{
+        top: 0%;
+        left: 0%;
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+    }
+    20%{
+        top: 0%;
+        left: 85%;
+        transform: rotate(-360deg);
+        animation-timing-function: linear;
+    }
+    50%{
+        top: 85%;
+        left: 85%;
+        transform: rotate(-540deg);
+        animation-timing-function: ease-in-out;
+    }
+    70%{
+        top: 85%;
+        left: 0%;
+        transform: rotate(-900deg);
+        animation-timing-function: linear;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        transform: rotate(-1080deg);
+    }
+}

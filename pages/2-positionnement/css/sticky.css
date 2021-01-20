@@ -1,0 +1,117 @@
+@font-face{
+    font-family: "h2";
+    src: url(../font/Dosis-VariableFont_wght.ttf);
+}
+
+/* C'est à ce niveau que j'ai appliqué le sticky comme demandé dans l'exercice*/
+header#barreNav {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1;/*je suis obligé de mettre le z-index sinon on voit le texte en transparence qd on scroll*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    text-align: right;  
+}
+
+footer a{
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: black;
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+    /* Les padding top et left servent a laisser de l'espace entre le titre h2 et le <hr> pour le top et la marge gauche de l'écran pour le left */
+    font-family: "h2", Verdana, sans-serif;
+}
+
+#banniere{
+    width: 100vw;
+    height: 31.2vw;
+    background-image: url(../img/the_binding_of_isaac_banniere.jpg);
+    background-size: contain;
+}
+
+/* cette partie concerne le menu de gauche */
+#menu{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 120px;
+    width: 15vw;
+    border-radius: 10px;
+    background-color: #C4B098FF;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'h2', Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#menu li{
+    margin-left: 15px;
+}
+
+/* cette section sert simplement à remplacer les puces de la liste par des images*/
+#li1{
+    list-style-image:url(../img/home_240.png)
+}
+
+#li2{
+    list-style-image:url(../img/personnage_240.png)
+}
+
+#li3{
+    list-style-image:url(../img/items_240.png)
+}
+
+#li4{
+    list-style-image:url(../img/secret_240.png)
+}
+
+#li5{
+    list-style-image:url(../img/bestiaire_240.png)
+}
+
+#li6{
+    list-style-image:url(../img/sauvegarde-240.png)
+}
+/*----------------------------------------------------------*/
+
+#contain1{
+    text-align: justify;
+    position: relative;
+    bottom: 18vw; /* j'ai relevé de 20vw pour que le titre soit à côté du menu */
+    width: 79vw;
+    left: 20vw;
+}
+
+h4{
+    padding: 25px;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+p{
+    padding: 15px;
+}
+
+/* J'ai mis une classe padding avec un padding top sinon lorsque l'on cliques sur l'ancre correspondante le h4 est caché par le header */
+.padding{
+    padding-top: 7vw;
+}
+
+#sauvegarde img,
+#perso img{
+    width: 90%;
+    background-size: contain;
+    display: block;
+    margin: 40px auto 0px;
+    border: black solid 1px;
+}

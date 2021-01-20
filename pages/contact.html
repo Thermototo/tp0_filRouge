@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fil Rouge | Contact</title>
+    <meta name="description" content="Les 6 travaux de Thermototo">
+    <meta name="author" content="Thermototo">
+    <script src="https://kit.fontawesome.com/3c56072dd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/header_fixed.css">
+    <link rel="stylesheet" href="../css/contact.css"> 
+</head>
+<body >
+    <header id="barreNav">
+        <h1>
+            <a href="../index.html">Les 6 travaux de Thermototo</a>
+        </h1>
+        <nav class="menu">
+            <div class="categorie">
+                <a href="1-jcvd/JCVD.html">JCVD</a>
+            </div>
+            <div class="categorie">
+                <a href="2-positionnement/positionnement.html">Positionnement</a>
+                <ul class="liste">
+                    <li><a href="2-positionnement/positionnement.html">relatif et absolu</a></li>
+                    <li><a href="2-positionnement/pages/4_carres.html">relatif vs absolu</a></li>
+                    <li><a href="2-positionnement/pages/float.html">float</a></li>
+                    <li><a href="2-positionnement/pages/sticky.html">sticky</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="3-flex/flex.html">Flex</a>
+            </div>
+            <div class="categorie">
+                <a href="5-mondrian/mondrian.html">Mondrian</a>
+                <ul class="liste">
+                    <li><a href="5-mondrian/mondrian.html">template-area</a></li>
+                    <li><a href="5-mondrian/pages/templateColumns.html">template cols/rows</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="4-animations/animation.html">Animations</a>
+                <ul class="liste">
+                    <li><a href="4-animations/pages/exo1_carre.html">carré</a></li>
+                    <li><a href="4-animations/pages/exo2_rebond.html">rebond</a></li>
+                    <li><a href="4-animations/pages/exo3_loading.html">loader</a></li>
+                    <li><a href="4-animations/pages/exo4_course.html">course</a></li>
+                    <li><a href="4-animations/pages/exo5_caroussel.html">caroussel</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="6-responsive/responsive.html">Responsive</a>
+                <ul class="liste">
+                    <li><a href="6-responsive/pages/exo1_web.html">lorem</a></li>
+                    <li><a href="6-responsive/pages/exo2_meteo.html">météo</a></li>
+                    <li><a href="6-responsive/pages/exo3_grille.html">bootstrap</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="contact.html">Contact</a>
+            </div>
+            <form id="search"> 
+                <input type="text" name=text" class="search" placeholder="Search ..">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 " id="form_container">
+                <h2>Contact Us</h2> 
+                <p> Please send your message below. We will get back to you at the earliest! </p>
+                <form role="form" method="post" id="reused_form">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="message"> Message:</label>
+                            <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="name"> Your Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright @ 2021 Binding, Inc. All rights reserved.<br />
+            Theme: TP Fil Rouge 1.0.0. Designed by Thermototo.
+        </div>
+    </footer>  
+</body>
+</html>

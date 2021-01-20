@@ -1,0 +1,67 @@
+section a{
+    color: black;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.cadre{
+    position: relative;
+}
+
+.gif{
+    position: absolute;
+    top: 48px;
+    left: 45px;
+}
+
+@media screen and (min-width:1600px){
+    #exo1{
+        top:250px;
+        left: 240px;
+    }
+    
+    #exo2{
+        top: 570px;
+        left: 240px;
+    }
+    
+    #exo3{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    #exo4{
+        top: 250px;
+        right: 240px;;
+    }
+    
+    #exo5{
+        top: 570px;
+        right: 240px;
+    }
+    .exos{
+        position: absolute;
+        width: 415px;
+        height: 300px;
+        text-align: center;
+    }
+    
+    /* la classe gif me sert a centrer les image dans le cadre */
+    .gif{
+        position: absolute;
+        top: 48px;
+        left: 67px;
+    }
+    section{
+        height: 578px;
+        border:white 1px solid;
+    }
+}

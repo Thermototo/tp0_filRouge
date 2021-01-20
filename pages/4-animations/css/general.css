@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------mise en page------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ivory;
+    font-size: 15pt;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------header--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+header span{
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------menu "deroulant"---------------------------------------------------*/
+
+#sommaire{
+    position: relative;
+    background-color: black;
+    margin:20px auto 0px auto;
+    padding-top: 20px;
+    width: 200px;  /* j'ai mis une taille de 200 pour pas que l'on puisse cliquer sur toute la longueur mais seulement sur sommaire*/
+    height: 58px;
+    overflow: hidden;
+}
+#sommaire:hover{
+    animation-name: sommaire;
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+    height: 150px;
+}
+
+@keyframes sommaire{
+    0%{
+        width: 200px;
+        height: 58px;
+    }
+    5%{
+        width: 100vw;
+        height: 58px;
+    }
+    100%{
+        width: 100vw;
+        height: 150px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------mise en page footer-------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.copyright{
+    background-color: black;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 10px;
+}

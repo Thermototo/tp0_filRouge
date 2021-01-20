@@ -1,0 +1,217 @@
+header#barreNav{
+    position: relative;
+}
+
+#h1grid{
+    text-align: center;
+    text-decoration: underline;
+    margin: 12px 50px 40px 50px;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+#navGrid{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+#navGrid a:hover{
+    text-decoration: underline;
+}
+
+span:first-of-type{
+    margin: 0 25px;
+}
+
+#navGrid a:first-child{
+    color: #c80707;
+    margin-left: 85px; /* c'est la solution de facilité que j'ai trouvé pour aligner le slash (span) au centre */
+}
+
+ 
+#prop{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+       
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    'wh01 wh01 wh01 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh02 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh03 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'wh01 wh01 wh01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 wh05 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 bl02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh07 wh08 wh08 wh08 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 ye02 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd01 rd02 rd02 rd02 wh04 wh04 wh04 ye01 ye01 ye01'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 ye03 ye03 ye03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh10 wh10 wh10 nr03 nr03 nr03 nr03 nr03 nr03'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 ye03 ye03 ye03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh10 wh10 wh10 nr03 nr03 nr03 nr03 nr03 nr03'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 ye03 ye03 ye03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh10 wh10 wh10 nr03 nr03 nr03 nr03 nr03 nr03'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 ye03 ye03 ye03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh10 wh10 wh10 nr03 nr03 nr03 nr03 nr03 nr03'
+    'nr01 nr01 nr01 wh06 wh06 wh06 wh06 wh06 wh06 wh06 nr02 nr02 nr02 ye03 ye03 ye03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 rd03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 bl03 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh09 wh10 wh10 wh10 nr03 nr03 nr03 nr03 nr03 nr03'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh12 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 wh13 bl04 bl04 bl04 bl04 bl04 ye05 ye05 ye05 wh14 wh14 wh14 wh14 wh14 wh14'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh11 wh11 wh11 rd04 rd04 rd04 rd04 rd04 rd04 rd04 nr02 nr02 nr02 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16'
+    'wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 wh15 ye04 ye04 ye04 rd05 rd05 rd05 rd05 rd05 rd05 rd05 rd05 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 nr04 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16 wh16';
+    padding: 10px;
+    grid-gap: 10px;
+    background-color: black;
+    width: 859.5px;
+    height: 612px;
+    margin: auto;
+}
+
+#blanc1{
+    grid-area: wh01;
+    background-color: #e6e6e6;
+}
+#blanc2{
+    grid-area: wh02;
+    background-color: #e6e6e6;
+}
+#blanc3{
+    grid-area: wh03;
+    background-color: #e6e6e6;
+}
+#blanc4{
+    grid-area: wh04;
+    background-color: #e6e6e6;
+}
+#blanc5{
+    grid-area: wh05;
+    background-color: #e6e6e6;
+}
+#blanc6{
+    grid-area: wh06;
+    background-color: #e6e6e6;
+}
+#blanc7{
+    grid-area: wh07;
+    background-color: #e6e6e6;
+}
+#blanc8{
+    grid-area: wh08;
+    background-color: #e6e6e6;
+}
+#blanc9{
+    grid-area: wh09;
+    background-color: #e6e6e6;
+}
+#blanc10{
+    grid-area: wh10;
+    background-color: #e6e6e6;
+}
+#blanc11{
+    grid-area: wh11;
+    background-color: #e6e6e6;
+}
+#blanc12{
+    grid-area: wh12;
+    background-color: #e6e6e6;
+}
+#blanc13{
+    grid-area: wh13;
+    background-color: #e6e6e6;
+}
+#blanc14{
+    grid-area: wh14;
+    background-color: #e6e6e6;
+}
+#blanc15{
+    grid-area: wh15;
+    background-color: #e6e6e6;
+}
+#blanc16{
+    grid-area: wh16;
+    background-color: #e6e6e6;
+}
+
+#jaune1{
+    grid-area: ye01;
+    background-color: #efbc0e;
+}
+#jaune2{
+    grid-area: ye02;
+    background-color: #efbc0e;
+}
+#jaune3{
+    grid-area: ye03;
+    background-color: #efbc0e;
+}
+#jaune4{
+    grid-area: ye04;
+    background-color: #efbc0e;
+}
+#jaune5{
+    grid-area: ye05;
+    background-color: #efbc0e;
+}
+
+#bleu1{
+    grid-area: bl01;
+    background-color: #0f036c;
+}
+#bleu2{
+    grid-area: bl02;
+    background-color: #0f036c;
+}
+#bleu3{
+    grid-area: bl03;
+    background-color: #0f036c;
+}
+#bleu4{
+    grid-area: bl04;
+    background-color: #0f036c;
+}
+
+#rouge1{
+    grid-area: rd01;
+    background-color: #c80707;
+}
+#rouge2{
+    grid-area: rd02;
+    background-color: #c80707;
+}
+#rouge3{
+    grid-area: rd03;
+    background-color: #c80707;
+}
+#rouge4{
+    grid-area: rd04;
+    background-color: #c80707;
+}
+#rouge5{
+    grid-area: rd05;
+    background-color: #c80707;
+}

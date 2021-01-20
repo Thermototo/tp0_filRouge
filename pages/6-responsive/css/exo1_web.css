@@ -1,0 +1,93 @@
+body{
+    background-image: url(../img/bc_jcvd.gif);
+    background-color: rgb(127, 195, 218);
+    background-blend-mode:darken;
+    color: white;
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    background-color: black;
+    padding: 10px;
+}
+
+header{
+    display: none;
+    text-align: center;
+}
+
+header a{
+    font-size: 1.5em;
+    margin: 0px 2vw;
+}
+
+p{
+    box-sizing: border-box;
+    background-color: #000000C3;
+    text-align: justify;
+    border: 2px dashed white;
+    margin: 1%;
+    padding: 5px;
+}
+
+#sommaire{
+    margin: 1%;
+    font-size: 1.2em;
+}
+
+footer{
+    display: none;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------partie responsive------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:640px){
+    p{
+        width: 30%;
+        float: left;
+    }
+    #sommaire{
+        float: none;
+        clear: left;
+    }
+}
+
+@media screen and (min-width:800px){
+    header{
+        display: block;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------partie @print----------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+@media print{
+    footer{
+        position:absolute;
+        display: block;
+        bottom: 10px;
+        left: 35%;
+        font-size: 0.8em;
+        text-align: center;
+        color: black;
+    }
+    body{
+        color: black;
+    }
+
+    /* supprime les urls de la page 
+    @page {
+        size: auto;
+        margin: 0;
+    }  */
+}

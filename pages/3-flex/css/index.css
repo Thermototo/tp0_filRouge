@@ -1,0 +1,119 @@
+
+/*----------------------------------------------------------*/
+/*------------------------- CSS header ---------------------*/
+/*----------------------------------------------------------*/
+header#barreNav{
+    position: relative;
+}
+#flex{
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(195,145,34);
+    background: linear-gradient(0deg, rgba(195,145,34,1) 0%, rgba(253,45,45,1) 100%);
+}
+
+ul{
+    display: flex;
+}
+
+ul>a{
+    text-decoration: none;
+    flex-grow: 0.2;
+    border: white solid 2px;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+h2{
+    margin: 15px;
+}
+
+ul>a:hover{
+    background-color: white;
+    padding: 0;
+}
+
+ul a:hover li::before{
+    position: relative;      /*par contre je n'arrive pas a ce que le lien ne change pas de position pendant le hoover*/
+    top: 7px;
+    margin-right: 10px;
+    content: url(../img/JCVD_icone.jpg);
+}
+
+/*----------------------------------------------------------*/
+/*------------------------ CSS section ---------------------*/
+/*----------------------------------------------------------*/
+
+section{
+    display: flex;
+    height: 72vh;
+}
+
+aside{
+    width: 0.2vw; /* je n'ai pas réusi à utiliser flex-grow sans donner de width */
+    flex-grow: 1;
+    border: black solid 1px
+}
+
+#aside1{
+    background-image: url(../img/JCVD1.jpg);
+    background-size: cover;
+}
+
+#aside2{
+    background-image: url(../img/JCVD2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+article{
+    width: 0.2vw; /* je n'ai pas réusi à utiliser flex-grow sans donner de width */
+    flex-grow: 3;
+    display: flex;
+    overflow: auto;
+    background-color: #E7EAEDFF;
+}
+
+p{
+    text-align: justify;
+    padding: 20px
+}
+
+/*----------------------------------------------------------*/
+/*------------------------ CSS footer ----------------------*/
+/*----------------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5px;
+    background-color: #58ADD8FF;
+}
+
+.reseaux {
+    display: flex;
+    width: 250px;
+    height: 48px;
+    justify-content: space-between;
+}
+
+.reseaux a:first-child {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons8-facebook-entouré-48.png);
+}
+
+.reseaux a:nth-child(2n) {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons8-twitter-entouré-48.png);
+}
+
+.reseaux a:last-child {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons8-instagram-48.png);
+}

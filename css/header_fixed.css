@@ -4,7 +4,7 @@
   box-sizing: border-box; 
 }
 
-header {
+#barreNav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -13,13 +13,13 @@ header {
   justify-content: space-between;
   text-transform: uppercase;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-size: 15pt;
 }
 
-header h1 a{
+#barreNav h1 a{
   display: flex;
   width: 300px;
   color: white;
@@ -29,11 +29,17 @@ header h1 a{
   text-decoration: none;
 }
 
+.copyright{
+  background-color: #58ADD8FF;
+  text-align: center;
+  padding: 10px;
+}
 
 /*--------------------------------------------------------------------*/
 /*-----------------------------------Menu-----------------------------*/
 /*--------------------------------------------------------------------*/
-nav{
+
+.menu{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -104,7 +110,7 @@ nav{
 /*-----------------------------------Recherche------------------------*/
 /*--------------------------------------------------------------------*/
 
-form{
+#search{
   width: 150px;
   display: flex;
   align-items: center;
@@ -127,6 +133,7 @@ form{
   cursor: pointer;
 }
 
+/* au cas ou la barre de navigation recouvre le haut du contenu */
 #paddingTop{
   height: 150px;
 }
@@ -137,8 +144,3 @@ form{
   }
 }
 
-.copyright{
-  background-color: #58ADD8FF;
-  text-align: center;
-  padding: 10px;
-}

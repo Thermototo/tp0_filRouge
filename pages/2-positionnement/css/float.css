@@ -1,0 +1,67 @@
+@font-face{
+    font-family: "h2";
+    src: url(../font/Dosis-VariableFont_wght.ttf);
+}
+
+footer{
+    text-align: right;  
+}
+
+footer a{
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: black;
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 15px;
+    /* Les padding top et left servent a laisser de l'espace entre le titre h2 et le <hr> pour le top et la marge gauche de l'écran pour le left */
+    font-family: "h2", Verdana, sans-serif;
+}
+
+#exo7{
+    padding-top: 105px; /* J'ai du mettre un grand padding top sinon le header cachait les carrés relatifs */
+}
+
+.first{
+    position: relative;
+    border: 2px solid black;
+    width: 40vw;
+    height: 40vw;
+    margin: 50px auto;
+    padding: 3vw;
+}
+
+.nop{
+    border: 2px solid black;
+    height: 33%; /* hauteur de 33% car le positionnement se fait sur 3 lignes */
+}
+
+/* Début des positionnements en flottant */
+#second6{
+    float: left;
+    width: 33%;
+    background-color: green;
+}
+
+#third6{
+    width: 66%;
+    background-color: blue;
+}
+
+#fourth6{
+    background-color: orangered;
+}
+
+#sixth6{
+    float: right;
+    width: 33%;
+    background-color: #ADD8E6;
+}
+
+#fifth6{
+    float: right;
+    width: 33%;
+    background-color: yellow;
+}

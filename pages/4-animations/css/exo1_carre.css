@@ -1,0 +1,64 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------communs a tous les exos---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+section{
+    height: 728px;
+    border:white 1px solid;
+}
+
+section a{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+#contain{
+    position: relative;
+    border: solid 2px green;
+    width: 25vw;
+    height: 25vw;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 120px auto 50px auto;
+    background-color: #F5F5DCF7;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------le carré qui tourne------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+#carre{
+    width: 8vw;
+    height: 8vw;
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: yellow;
+    
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        background-color: yellow;
+    }
+    to{
+        transform: rotate(1080deg);
+        background-color: red;
+    }
+}
