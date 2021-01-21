@@ -1,41 +1,14 @@
-header#barreNav{
-    position: relative;
-}
-
-#form_container
-{
-    padding:15px 15px;
-    margin-top:15px;
-    background: rgba(0,0,0,0.5);	
-    color:#fff;
-}
-
 body{
-    background-color: #000;
-    background-image: url("../img/contact-us.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-color: ;
-    background-color: #58ADD8FF;
-    background-blend-mode: lighten;
+  background-color: #000;
+  background-image: url("../img/contact-us.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-color: #58ADD8FF;
+  background-blend-mode: lighten;
 }
 
-.upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.upload-btn-wrapper input[type=file] {
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
-
-/*--------------------------bootstrap-----------------*/
 .container {
+  height: 86vh;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -57,9 +30,17 @@ body{
   }
 }
 
+#formulaire{
+  padding:15px 15px;
+  margin-top:10vh;
+  background: rgba(0,0,0,0.5);	
+  color:#fff;
+  z-index: -1;
+}
 
-
-
+p{
+  padding: 25px 0 15px 0;
+}
 
 .row {
   margin-right: -15px;
@@ -73,14 +54,12 @@ body{
   padding-left: 15px;
 }
 
-
 @media (min-width: 992px) {
   .col-md-6 {
     float: left;
     width: 50%;
   }
 }
-
 @media and screen (min-width: 768px) {
   .col-sm-6, .col-sm-12 {
     float: left;
@@ -91,7 +70,7 @@ body{
   .col-sm-6 {
     width: 40%;
   }
-  .form-group {
+  .form-infos {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
@@ -106,21 +85,15 @@ textarea {
   overflow: auto;
   width: 80%;
 }
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-textarea.form-control {
-  height: auto;
-}
-.form-group {
+
+
+.form-infos {
   margin-bottom: 15px;
 }
 
+textarea.form-control {
+  height: auto;
+}
 
 .form-control {
   display: block;
@@ -134,8 +107,9 @@ textarea.form-control {
   border-radius: 4px;
 }
 
-
-.btn {
+#submit{
+  cursor: pointer;
+  float: right;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 5px;
@@ -146,9 +120,4 @@ textarea.form-control {
   vertical-align: middle;
   border: 1px solid transparent;
   border-radius: 4px;
-}
-
-button{
-  cursor: pointer;
-  float: right;
 }

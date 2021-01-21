@@ -3,6 +3,11 @@
     src: url(../font/Dosis-VariableFont_wght.ttf);
 }
 
+#barreNav{
+    position: fixed;
+    z-index: 5;
+}
+
 h2{
     padding-top: 10px;
     padding-left: 15px;

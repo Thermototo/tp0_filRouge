@@ -1,13 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face{
+    font-family: 'Roboto';
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+  }
+
+#barreNav{
+    position: fixed;
+    z-index: 5;
 }
 
 #clip{
     display: flex;
     background-color: #58ADD8FF;
-    clip-path: polygon(0 1%, 50% 0, 100% 50%, 100% 100%, 40% 100%, 0 40%);
+    clip-path: polygon(0 0, 50% 0, 100% 50%, 100% 100%, 40% 100%, 0 40%);
     height: 94vh;
 }
 
@@ -15,7 +19,7 @@
     width: 30%;
     height: 50%;
     background-color: white;
-    clip-path: polygon(0 1%, 50% 0, 100% 35%, 100% 100%, 40% 100%, 0 65%);
+    clip-path: polygon(0 0, 50% 0, 100% 35%, 100% 100%, 40% 100%, 0 65%);
     margin: auto;
 }
 
@@ -24,7 +28,8 @@ p{
     margin-left: 40%;
     text-align: justify;
     padding-right: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 p::first-letter{

@@ -6,8 +6,9 @@
     <title>Fil Rouge | Contact</title>
     <meta name="description" content="Les 6 travaux de Thermototo">
     <meta name="author" content="Thermototo">
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3c56072dd7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/header_fixed.css">
+    <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/contact.css"> 
 </head>
 <body >
@@ -69,29 +70,33 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 " id="form_container">
-                <h2>Contact Us</h2> 
-                <p> Please send your message below. We will get back to you at the earliest! </p>
-                <form role="form" method="post" id="reused_form">
+            <div class="col-md-6 " id="formulaire">
+                <h2>
+                    Contactez moi
+                </h2> 
+                <p>
+                    Envoyez votre message ci-dessous. Je vous répondrai le plus vite possible! 
+                </p>
+                <form role="form" method="post">
                     <div class="row">
-                        <div class="col-sm-12 form-group">
+                        <div class="col-sm-12 form-infos">
                             <label for="message"> Message:</label>
                             <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="name"> Your Name:</label>
+                        <div class="col-sm-6 form-infos">
+                            <label for="name">Votre Nom:</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
-                        <div class="col-sm-6 form-group">
-                            <label for="email"> Email:</label>
+                        <div class="col-sm-6 form-infos">
+                            <label for="email">Votre Email:</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+                        <div class="col-sm-12 form-infos">
+                            <button id="submit" type="submit">Envoyer &rarr;</button>
                         </div>
                     </div>
                 </form>
