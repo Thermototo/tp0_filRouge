@@ -61,7 +61,11 @@ section{
         left: 67px;
     }
     section{
-        height: 578px;
+        height: 661px;
         border:white 1px solid;
     }
+}
+
+header#container{
+    position: absolute;
 }

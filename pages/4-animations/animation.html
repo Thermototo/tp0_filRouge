@@ -3,16 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Animation</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <title>Portfolio Thermototo | Animations</title>
+    <meta name="description" content="Les 6 travaux de Thermototo">
+    <meta name="author" content="Thermototo">
+    <link rel="shortcut icon" href="../../img/favicon.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3c56072dd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../4-animations/css/general.css">
+    <link rel="stylesheet" href="../4-animations/css/index.css">
 </head>
 <body>
-    <header>
+    <header id="barreNav">
         <h1>
-            TP sur les Animations en CSS
+            <a href="../../index.html">Les 6 travaux de Thermototo</a>
         </h1>
+        <nav class="menu">
+            <div class="categorie">
+                <a href="../1-jcvd/JCVD.html">JCVD</a>
+            </div>
+            <div class="categorie">
+                <a href="../2-positionnement/positionnement.html">Positionnement</a>
+                <ul class="liste">
+                    <li><a href="../2-positionnement/positionnement.html">relatif et absolu</a></li>
+                    <li><a href="../2-positionnement/pages/4_carres.html">relatif vs absolu</a></li>
+                    <li><a href="../2-positionnement/pages/float.html">float</a></li>
+                    <li><a href="../2-positionnement/pages/sticky.html">sticky</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="../3-flex/flex.html">Flex</a>
+            </div>
+            <div class="categorie">
+                <a href="../5-mondrian/mondrian.html">Mondrian</a>
+                <ul class="liste">
+                    <li><a href="../5-mondrian/mondrian.html">template-area</a></li>
+                    <li><a href="../5-mondrian/pages/templateColumns.html">template cols/rows</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="animation.html">Animations</a>
+                <ul class="liste">
+                    <li><a href="pages/exo1_carre.html">carré</a></li>
+                    <li><a href="pages/exo2_rebond.html">rebond</a></li>
+                    <li><a href="pages/exo3_loading.html">loader</a></li>
+                    <li><a href="pages/exo4_course.html">course</a></li>
+                    <li><a href="pages/exo5_caroussel.html">caroussel</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="../6-responsive/responsive.html">Responsive</a>
+                <ul class="liste">
+                    <li><a href="../6-responsive/pages/exo1_web.html">lorem</a></li>
+                    <li><a href="../6-responsive/pages/exo2_meteo.html">météo</a></li>
+                    <li><a href="../6-responsive/pages/exo3_grille.html">bootstrap</a></li>
+                </ul>
+            </div>
+            <div class="categorie">
+                <a href="../contact.html">Contact</a>
+            </div>
+            <form id="search"> 
+                <input type="text" name=text" class="search" placeholder="Search ..">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+    </header>
+    <header id="container">
         <div id="sommaire">
             <h2>
                 <i class="fas fa-arrow-alt-circle-down"></i>
@@ -93,7 +150,7 @@
     <footer>
         <div class="copyright">
             Copyright @ 2021 Binding, Inc. All rights reserved.<br />
-            Theme: TP Animation 1.0.0. Designed by Thermototo.
+            Theme: TP Fil Rouge 1.0.0. Designed by Thermototo.
         </div>
     </footer>
 </body>

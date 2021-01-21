@@ -14,17 +14,17 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
   }
@@ -35,7 +35,6 @@ body{
   margin-top:10vh;
   background: rgba(0,0,0,0.5);	
   color:#fff;
-  z-index: -1;
 }
 
 p{
@@ -54,13 +53,14 @@ p{
   padding-left: 15px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width:992px) {
   .col-md-6 {
     float: left;
     width: 50%;
   }
 }
-@media and screen (min-width: 768px) {
+
+@media screen and (min-width:768px) {
   .col-sm-6, .col-sm-12 {
     float: left;
   }
@@ -80,9 +80,6 @@ p{
 
 textarea {
   margin: 0;
-  font: inherit;
-  color: inherit;
-  overflow: auto;
   width: 80%;
 }
 
@@ -97,12 +94,11 @@ textarea.form-control {
 
 .form-control {
   display: block;
-  padding: 6px 12px;
+  /* padding: 6px 12px; */
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
-  background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -110,7 +106,6 @@ textarea.form-control {
 #submit{
   cursor: pointer;
   float: right;
-  display: inline-block;
   padding: 6px 12px;
   margin-bottom: 5px;
   font-size: 14px;
